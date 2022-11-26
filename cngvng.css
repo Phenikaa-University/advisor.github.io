@@ -1,0 +1,196 @@
+/* Vuong Cuong write */
+
+@media screen and (max-width: 767px) {
+    .navigation {
+        position: fixed;
+        left: 0%;
+        top: 0%;
+        right: 0%;
+        bottom: auto;
+        height: 96px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        -webkit-box-align: center;
+        align-items: center;
+        -ms-flex-align: center;
+    }
+
+    .nav-container{
+        padding-right: 34px;
+        padding-left: 24px;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+    }
+
+    .brand-logo{
+        max-width: 40px;
+        padding-left: 0;
+    }
+
+    .w-nav-brand{
+        padding-left: 10px;
+    }
+
+    .nav-menu-wrap{
+        height: calc(100vh-81px);
+        position: absolute;
+        left: 0%;
+        top: 100%;
+        right: 0%;
+        bottom: auto;
+        display: none;
+        padding: 48px 32px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        -webkit-box-align: start;
+        align-items: flex-start;
+        align-content: flex-start;
+        grid-column-gap: 48px;
+        grid-row-gap: 48px;
+        background-color: #f0f0eb;
+    }
+
+    .nav-menu{
+        display: flex;
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-box-align: start;
+        align-items: flex-start;
+    }
+
+    .nav-link{
+        display: block;
+        margin-right: 0px;
+        margin-bottom: 16px;
+        font-size: 40px;
+        line-height: 46px;
+        font-weight: 400;
+    }
+
+    .menu-button{
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+
+
+}
+
+.brand-logo{
+    width: 100%;
+    max-width: 48px;
+    margin-top: 0px;
+    margin-right: 40px;
+    margin-bottom: 0px;
+}
+
+.menu-sep{
+    width: 16px;
+    height: 2px;
+    margin-bottom: 3px;
+    background-color: #1b1b1e;
+}
+
+.navigation{
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    z-index: 300;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 183px;
+    padding-bottom: 24px;
+    -webkit-box-align: end;
+    border-bottom: 1px solid transparent;
+    background-color: #fdfdfa;
+}
+
+.w-nav{
+    position: relative;
+    background-color: #dddddd;
+    z-index: 1000;
+}
+
+.w-nav::before, .w-nav::after{
+    content: " ";
+    display: table;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2;
+}
+
+.w-nav::after{
+    clear: both;
+}
+
+body{
+    font-family: Messinasansweb, sans-serif;
+    color: #1b1b1e;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+div{
+    display: block;
+}
+
+.nav-container{
+    display: flex;
+    width: 100%;
+    max-width: 1288px;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+
+.nav-menu-wrap{
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-button{
+    display: none;
+    padding: 4px 3px;
+}
+
+.menu-sep.bottom-sep{
+    margin-bottom: 0px;
+}
+
+.w-nav-overlay{
+    position: absolute;
+    overflow: hidden;
+    display: none;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.img{
+    display: inline-block;
+    max-width: 100%;
+}
+
+.full-width{
+    width: 100%;
+}
+
