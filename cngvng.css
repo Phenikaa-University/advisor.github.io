@@ -82,16 +82,25 @@ a{
     text-decoration-thickness: 2px;
 }
 
+.nav-link:hover{
+    text-decoration-color: #cbcbc9;
+}
+
 .nav-link:after{
     position: absolute;
     height: 2px;
     bottom: -6px;
-    margin: auto;
+    margin: 0 auto;
     left: 0;
     right: 0;
     width: 0%;
     background-color: transparent;
     transition: 0.5s;
+}
+
+.nav-link:hover:after{
+    width: 100%;
+    background: #cbcbc9;
 }
 
 .button.nav-button{
@@ -188,4 +197,76 @@ a{
 .modify{
     max-width: 850px;
     margin-bottom: 32px;
+}
+
+.modify1{
+    padding-top: 0px;
+    padding-bottom: 240px;
+}
+
+#content-2{
+    grid-column-start: 3;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.label-cover{
+    margin-bottom: 32px;
+    padding: 9px 16px;
+    border-radius: 8px;
+}
+
+#content2{
+    grid-column-start: span 12;
+    grid-column-end: span 12;
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+}
+
+.modify3{
+    background-color: #1b1b1e;
+}
+
+.col.col-grid{
+    display: grid;
+    width: 100%;
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+#content2-1{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: stretch;
+}
+
+.slide-black{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.w-slider{
+    position: relative;
+    text-align: center;
+    background: #dddddd;
+    clear: both;
+}
+
+.black-mask{
+    width: 100%;
+}
+
+.w-slider-mask{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    height: 100%;
+    white-space: nowrap;
 }
