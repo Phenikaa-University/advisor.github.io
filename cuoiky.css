@@ -48,3 +48,25 @@ footer{
     transform: translate3d(0px, 0%, 0px);
     transform-style: preserve-3d ;   
 }
+
+body{
+    font-family: Messinasansweb, sans-serif;
+    color: #1b1b1e;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+div{
+    display: block;
+}
+
+h1{
+    margin-top: 0px;
+    font-family: 'Galaxiecopernicus book', sans-serif;
+    color: black;
+    font-size: 65px;
+    line-height: 76px;
+    font-weight: 400;
+}
+

@@ -1,90 +1,5 @@
 /* Vuong Cuong write */
 
-@media screen and (max-width: 767px) {
-    .navigation {
-        position: fixed;
-        left: 0%;
-        top: 0%;
-        right: 0%;
-        bottom: auto;
-        height: 96px;
-        padding-top: 24px;
-        padding-bottom: 24px;
-        align-items: center;
-    }
-
-    .nav-container{
-        padding-right: 34px;
-        padding-left: 24px;
-        justify-content: space-between;
-    }
-
-    .brand-logo{
-        max-width: 40px;
-        padding-left: 0;
-    }
-
-    .w-nav-brand{
-        padding-left: 10px;
-    }
-
-    .nav-menu-wrap{
-        height: calc(100vh-81px);
-        position: absolute;
-        left: 0%;
-        top: 100%;
-        right: 0%;
-        bottom: auto;
-        display: none;
-        padding: 48px 32px;
-        flex-direction: row;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        align-content: flex-start;
-        background-color: #f0f0eb;
-    }
-
-    .nav-menu{
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-link{
-        display: block;
-        margin-right: 0px;
-        margin-bottom: 16px;
-        font-size: 40px;
-        line-height: 46px;
-        font-weight: 400;
-    }
-
-    .menu-button{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-}
-
-.brand-logo{
-    width: 100%;
-    max-width: 48px;
-    margin-top: 0px;
-    margin-right: 40px;
-    margin-bottom: 0px;
-}
-
-.menu-sep{
-    width: 16px;
-    height: 2px;
-    margin-bottom: 3px;
-    background-color: #1b1b1e;
-}
-
 .navigation{
     position: fixed;
     left: 0%;
@@ -93,10 +8,10 @@
     bottom: auto;
     z-index: 300;
     display: flex;
-    height: 183px;
     padding-bottom: 24px;
-    border-bottom: 1px solid transparent;
-    background-color: #fdfdfa;
+    padding-top: 24px;
+    height: 100px;
+    align-items: center;
 }
 
 .w-nav{
@@ -117,17 +32,7 @@
     clear: both;
 }
 
-body{
-    font-family: Messinasansweb, sans-serif;
-    color: #1b1b1e;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-}
 
-div{
-    display: block;
-}
 
 .nav-container{
     display: flex;
@@ -135,41 +40,152 @@ div{
     max-width: 1288px;
     margin-right: auto;
     margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
     align-items: center;
+}
+
+.logo{
+    width: 100%;
+    max-width: 48px;
+    margin-top: 0px;
+    margin-right: 40px;
+    margin-bottom: 0px;
+}
+
+.nav-brand{
+    position: relative;
+    float: left;
+    text-decoration: none;
+    color: brown;
+    opacity: 200ms;
+}
+
+a{
+    background-color: transparent;
 }
 
 .nav-menu-wrap{
     display: flex;
     width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+.nav-link{
+    margin-right: 32px;
+    position: relative;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+}
+
+.nav-link:after{
+    position: absolute;
+    height: 2px;
+    bottom: -6px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 0%;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.button.nav-button{
+    padding-top: 20px;
+}
+
+.button{
+    padding: 20px 35px;
+    border-radius: 60px;
+    background-color: yellow;
+    color: black;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.web-button{
+    display: inline-block;
+    padding: 9px 15px;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.head{
+    display: flex;
+    padding-top: 320px;
+    padding-bottom: 240px;
+    flex-direction: column;
     justify-content: center;
+    flex-wrap: nowrap;
     align-items: center;
 }
 
-.menu-button{
-    display: none;
-    padding: 4px 3px;
+
+
+.section{
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 320px;
+    flex-direction: column;
+    align-items: center;
 }
 
-.menu-sep.bottom-sep{
-    margin-bottom: 0px;
-}
-
-.w-nav-overlay{
-    position: absolute;
-    overflow: hidden;
-    display: none;
-    top: 100%;
-    left: 0;
-    right: 0;
+.container{
     width: 100%;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.img{
-    display: inline-block;
-    max-width: 100%;
+.container.grid{
+    display: grid;
+    align-items: stretch;
+    align-content: stretch;
+    align-self: auto;
+    order: 0;
+    grid-auto-columns: 1fr;
 }
 
-.full-width{
-    width: 100%;
+#content-1{
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-content: center;
 }
 
+.col.flex-center{
+    padding-bottom: 0px;
+}
+
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-center{
+    text-align: center;
+}
+
+.col{
+    position: relative;
+
+}
+.empty{
+    letter-spacing: 0em;
+}
+
+.modify{
+    max-width: 850px;
+    margin-bottom: 32px;
+}
