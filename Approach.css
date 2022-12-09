@@ -1,0 +1,149 @@
+.Overview {
+    padding: 150px 0;
+    margin: 0 14%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.Overview>div>p {
+    /* padding: 20px 0 50px 0; */
+    font-size: 40px;
+    text-align: center;
+}
+
+.Overview-div{
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+}
+
+.Overview-div-div{
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+    font-size:15px;
+}
+
+.Overview-div-div p{
+    font-size: 30px;
+    padding:0 ;
+}
+
+.Overview-div-div-div{
+    flex: 1;
+    border-left: 1px solid black ;
+    padding: 0 20px;
+    padding-top: 0;
+}
+
+.Overview-text{
+    padding-top: 10px;
+}
+
+.Case-studies {
+    padding: 150px 0;
+    margin: 0 14%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Case-studies-div{
+    display: flex;
+    flex-direction:column;
+}
+
+.Case-studies>div>p {
+    padding: 20px 0 50px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.case-div1{
+    display: flex;
+    flex-direction: row;
+}
+
+.case-div {
+    width: 50%;
+    padding: 10px;
+    background-color: #1B1B1E;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 20px 0;
+    flex-direction: column-reverse;
+    text-align: center;
+    flex: 1;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.case-div img{
+    width: 100%;
+    height: 500%;
+}
+
+.case {
+    background-color: black;
+    padding: 15px 10px;
+    border-radius: 15px;
+    border: 0.5px solid white;
+    font-weight: bold;
+    width: 25%;
+    color:white;
+}
+
+.case:hover {
+    background-color: white;
+    color: black;
+    border: 0.5px solid white;
+    cursor:pointer;
+}
+
+.case-div0{
+    background-color: white;
+    flex: 1;
+    margin: 20px;
+}
+
+.inves{
+    display: flex;
+}
+
+.inves-text{
+    flex: 1;
+    font-size: 20px;
+    margin-right: 20px;
+
+}
+
+.inves-text>div{
+    margin-top:30px ;
+}
+
+.inves-img{
+    flex: 1;
+}
+
+.inves-img img{
+    width: 120%;
+}
+
+.work-img{
+    margin-top:5px ;
+    align-items:flex-start;
+}
+
+.work-img img{
+
+    width: 100%;
+}
+
+.pricing a{
+    margin-top:50px ;
+    text-decoration: underline;
+}
