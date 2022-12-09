@@ -13,9 +13,9 @@ a{
     text-decoration: none;
 }
 
-/* header{
+header{
     height: 15%;
-} */
+}
 
 nav{
     width: 100%;
@@ -31,6 +31,31 @@ main section{
     display: block;
 }
 
+
+
+.footer{
+    display: flex;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #999;
+}
+
+
+
+body{
+    background-color: #fdfdfa;
+    font-family: Messinasansweb, sans-serif;
+    color: #1b1b1e;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+div{
+    display: block;
+}
 
 h1{
     margin-top: 0px;
@@ -85,14 +110,45 @@ img{
     border: 0;
 }
 
-/* p{
+p{
     margin-bottom: 0px;
     color: #1b1b1e;
     font-size: 16px;
     line-height: 22px;
     letter-spacing: -0.02em;
-} */
+}
+
+div{
+    display: block;
+}
+
+ul{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-left: 32px;
+    font-size: 14px;
+    line-height: 1.1;
+}
+
+ol{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-left: 32px;
+    font-size: 14px;
+    line-height: 1.1;
+}
+
+li{
+    margin-bottom: 12px;
+}
 
 article, aside, footer, header, footer, main, menu, nav, section, summary{
     display: block;
-} 
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    cursor: default;
+}

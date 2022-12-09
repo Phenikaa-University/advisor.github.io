@@ -995,3 +995,9 @@
 .case-collection-item-slide{
     display: block;
 }
+
+.col.contact-top-col{
+    margin-bottom: 48px;
+    flex-direction: row;
+    align-items: center;
+}
